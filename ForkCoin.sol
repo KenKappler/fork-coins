@@ -54,6 +54,7 @@ contract forkFuture {
         }
     }
     ///checks if the fork has happened and if it has sets the bool forked to true
+    /// code by @gavofyork
     function setFork() {
         if (
             // Check that TheDAO's code has been changed...
