@@ -1,10 +1,10 @@
-///A token type which allows the issuing and burning of tokens by a
+///A token type which allows the issuing and burning of tokens.
 
 import "Token.sol";
 
 contract ForkToken is Token{
 
-    //sets the token creator as its factory
+    //sets the token creator as its owner
     function ForkToken(){
         owner = forkFuture(msg.sender);
     }
